@@ -1,2 +1,2 @@
 # Dive-Into-Design-Patterns
-My own implementation of different design patterns
+My own implementations of different design patterns
