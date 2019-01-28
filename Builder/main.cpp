@@ -1,5 +1,4 @@
-﻿#include "pch.h"
-#include <iostream>
+﻿#include <iostream>
 #include "director.h"
 #include "carBuilder.h"
 
@@ -9,11 +8,9 @@ int main()
 	CarBuilder *carBuilder = new CarBuilder;
 
 	//Here we build SportCar
-	director->makeSportsCar(carBuilder);
-	Car *sportCar = carBuilder->getResult();
+	Car *sportCar = director->makeSportsCar(carBuilder);
 	//And here we build ElectroCar
-	director->makeElectroCar(carBuilder);
-	Car *electroCar = carBuilder->getResult();
+	Car *electroCar = director->makeElectroCar(carBuilder);
 
 	delete director;
 	delete carBuilder;
